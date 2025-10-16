@@ -8,7 +8,7 @@ response=requests.post(
     "https://openrouter.ai/api/v1/chat/completions",
     headers={
 
-        "Authorization":f"Bearer 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",
+        "Authorization":f"Bearer <API_KEY>",
         "Content-Type":"application/json",
     },
 
@@ -53,4 +53,5 @@ response=requests.post(
 )
 
 answer = response.json()['choices'][0]['message']['content']
+
 print(answer)
